@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* ----- Index Page ----- */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftdiv {
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    color: #FFF;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftdiv>h1 {
+    color: #575a85;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.leftdiv>p {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.leftdiv>img {
+    width: 50%;
+    align-self: center;
+}
+
+.rightdiv {
+    width: 50%;
+    height: 100%;
+    background-color: #575a85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.rightdiv>h1 {
+    color: #b8bccc;
+    font-size: 2rem;
+}
+
+.rightdiv>h1>span {
+    color: white;
+    font-size: 2rem;
+}
+
+.rightdiv>button {
+    width: 250px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    color: #b8bccc;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: 2px solid #b8bccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ----- DetailPage ----- */
+header {
+    width: 100%;
+    background-color: #000;
+    padding: 20px 40px;
+}
+
+.ip-address {
+    color: #b8bccc;
+    margin: 30px 0px;
+}
+
+.ip-address>span {
+    color: white;
+}
+
+.ip-data {
+    margin: 5px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    color: #b8bccc;
+    font-size: 1.5rem;
+}
+
+.ip-data>div>p {
+    margin: 10px;
+    width: 100%;
+}
+
+.ip-data>div>p>span {
+    color: white;
+}
+
+.mapSection {
+    width: 100%;
+    text-align: center;
+    background-color: #575a85;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.mapSection>h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #b8bccc;
+    margin: 10px;
+}
+
+.mapSection>iframe {
+    width: 80%;
+    height: 80vh;
+}
+
+.more-information,
+.post-office {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    padding: 30px;
+    color: white;
+}
+
+.more-information>h1,
+.post-office>h1 {
+    text-align: center;
+}
+
+.more-info-data {
+    display: flex;
+    flex-direction: column;
+    color: #b8bccc80;
+    gap: 20px;
+}
+
+.more-info-data>p>span {
+    color: white;
+}
+
+.search {
+    margin: 20px 0px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    border: 3px solid #575a85;
+    border-radius: 10px;
+}
+
+.search>input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    font-size: 1.1rem;
+}
+
+.search>input::placeholder {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.offices-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 550px;
+    padding: 30px;
+    background-color: #575a85;
+    border-radius: 15px;
+    transition: all ease 1s;
+}
+
+.card:hover {
+    scale: 1.05;
+    box-shadow: 0 0 20px rgba(218, 177, 177, 0.8);
+}
+
+.card>p {
+    font-size: 1.5rem;
+    color: #b8bccc;
+}
+
+.card>p>span {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.offices-container>h1 {
+    width: 100%;
+    height: 50vh;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    /* ----- Index Page ----- */
+    .leftdiv,
+    .rightdiv {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .leftdiv>h1 {
+        font-size: 1.5rem;
+    }
+
+    .leftdiv>p {
+        width: 100%;
+    }
+
+    .leftdiv>img {
+        width: 16rem;
+    }
+}

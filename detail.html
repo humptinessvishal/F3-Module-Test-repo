@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Post Office Details</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="ip-address">IP Address: <span id="ip-address">Loading...</span></h2>
+        <div class="ip-data">
+            <div class="lat-long">
+                <p>Lat: <span id="lat"></span></p>
+                <p>Long: <span id="long"></span></p>
+            </div>
+            <div class="city-region">
+                <p>City: <span id="city"></span></p>
+                <p>Region: <span id="region"></span></p>
+            </div>
+            <div class="organ-host">
+                <p>Organization: <span id="Organization"></span></p>
+                <p>Hostname: <span id="hostname"></span></p>
+            </div>
+        </div>
+    </header>
+    <section class="mapSection">
+        <h1>Your Current Location</h1>
+        <iframe id="map" frameborder="0" style="border: 0"></iframe>
+    </section>
+    <section class="more-information">
+        <h1>More Information About You</h1>
+        <div class="more-info-data">
+            <p>Time Zone: <span id="timeZone"></span></p>
+            <p>Date And Time: <span id="date"></span></p>
+            <p>Pincode: <span id="pincode"></span></p>
+            <p>Message: <span id="msg"></span></p>
+        </div>
+    </section>
+    <section class="post-office">
+        <h1>Post Offices Near You</h1>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input minlength="6" type="text" placeholder="Search By PINCODE" id="search" />
+        </div>
+        <div class="offices-container" id="offices-container">
+            <h1>Loading...</h1>
+            <!-- <div class="card">
+                <p>Name: <span>Kidwaipuri</span></p>
+                <p>Branch type: <span>Sub Post Office</span></p>
+                <p>Delivery Status: <span>Non-Delivery</span></p>
+                <p>District: <span>Patna</span></p>
+                <p>Division: <span>Patna</span></p>
+            </div> -->
+        </div>
+    </section>
+
+    <script src="./script2.js"></script>
+</body>
+
+</html>
