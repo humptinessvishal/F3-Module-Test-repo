@@ -77,7 +77,7 @@ async function searchPost(pin) {
             cont.innerHTML = "";
             for (let i = 0; i < data[0].PostOffice.length; i++) {
                 cont.innerHTML += `
-                <div class="card">;
+                <div class="card">
                     <p>Name: <span>${data[0].PostOffice[i].Name}</span></p>
                     <p>Branch type: <span>${data[0].PostOffice[i].BranchType}</span></p>
                     <p>Delivery Status: <span>${data[0].PostOffice[i].DeliveryStatus}</span></p>
